@@ -82,10 +82,7 @@ Next, let's talk about the Regime Options that you have with RYE.
 
 ### 3. **Run Backtests**
 ```bash
-# Basic momentum strategy
 python rye.py backtest --input data/SPY.csv --strategy momentum
-
-# With custom fees and HTML report
 python rye.py backtest --input data/SPY.csv --strategy macd --fees-bps 10 --report
 ```
 
@@ -99,18 +96,16 @@ python rye.py backtest --input data/SPY.csv --strategy macd --fees-bps 10 --repo
 
 ### 4. **Compare All Strategies**
 ```bash
-# Compare all strategies side-by-side
 python rye.py compare --input data/SPY.csv --report
 ```
 
 ### 5. **View Reports**
 ```bash
-# Serve reports over HTTP
 python rye.py serve --port 8080
 ```
 Then open `http://localhost:8080` in your browser.
 
-## 📊 **Technical Indicators**
+## **Technical Indicators**
 
 ### **Moving Averages**
 - **SMA (Simple Moving Average)**: Traditional moving average
